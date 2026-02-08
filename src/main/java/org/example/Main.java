@@ -1,0 +1,16 @@
+package org.example;
+
+import factory.NotificationFactory;
+import interfaces.Notification;
+
+public class Main {
+    static void main() {
+        NotificationFactory factory = new NotificationFactory();
+
+        Notification n1 = factory.createNotification("email");
+        n1.notifyUser();
+
+        Notification n2 = factory.createNotification("whatsapp");
+        n2.notifyUser();
+    }
+}
