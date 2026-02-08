@@ -1,7 +1,7 @@
 package org.example;
 
-import factory.NotificationFactory;
-import interfaces.Notification;
+import FactoryPattern.factory.NotificationFactory;
+import FactoryPattern.interfaces.Notification;
 
 public class Main {
     static void main() {

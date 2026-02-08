@@ -1,4 +1,4 @@
-package interfaces;
+package FactoryPattern.interfaces;
 
 public interface Notification {
 
