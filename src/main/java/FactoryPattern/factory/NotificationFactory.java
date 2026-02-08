@@ -1,9 +1,9 @@
-package factory;
+package FactoryPattern.factory;
 
-import interfaces.Notification;
-import notifications.EmailNotification;
-import notifications.SMSNotification;
-import notifications.WhatsappNotification;
+import FactoryPattern.interfaces.Notification;
+import FactoryPattern.notifications.EmailNotification;
+import FactoryPattern.notifications.SMSNotification;
+import FactoryPattern.notifications.WhatsappNotification;
 
 public class NotificationFactory {
 

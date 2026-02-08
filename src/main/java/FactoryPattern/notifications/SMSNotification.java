@@ -1,6 +1,6 @@
-package notifications;
+package FactoryPattern.notifications;
 
-import interfaces.Notification;
+import FactoryPattern.interfaces.Notification;
 
 public class SMSNotification implements Notification {
     @Override
