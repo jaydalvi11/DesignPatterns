@@ -12,16 +12,12 @@ public class NotificationFactory {
             return null;
         }
 
-        switch (channel.toUpperCase()) {
-            case "SMS" :
-                return new SMSNotification();
-            case "EMAIL" :
-                return new EmailNotification();
-            case "WHATSAPP" :
-                return new WhatsappNotification();
-            default :
-                throw new IllegalArgumentException();
-        }
+        return switch(channel.toUpperCase()) {
+            case "SMS" -> new SMSNotification();
+            case "EMAIL" -> new EmailNotification();
+            case "WHATSAPP" -> new WhatsappNotification();
+            default -> throw new IllegalArgumentException();
+        };
     }
 
 }
